@@ -70,7 +70,7 @@ function draw() {
   text("Ammo: " + ammo, 200, 550); // Display the remaining ammo
 
   // handle what happens when the player runs out of ammo
-  if (ammo == 0) {
+  if (ammo == 0 && !gameOver && !gameFinished) {
     textSize(50); // text size for the reload message
     textAlign(CENTER, CENTER); // Center the reload message
     fill(100, 0, 0); // Set the text colour to  red
